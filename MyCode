@@ -1,0 +1,26 @@
+integer red
+integer green
+integer blue
+integer minValue
+
+red = Get next input
+green = Get next input
+blue = Get next input
+
+// define value of minValue
+if red >= 0
+   minValue = red
+   if green < minValue
+      minValue=green
+      if blue < minValue
+         minValue=blue
+else
+   Put "Error, number must be between 0 and 255." to output
+   
+//subtract gray from the color
+Put (red - minValue) to output
+Put " " to output
+Put (green - minValue) to output
+Put " " to output
+Put (blue - minValue) to output
+ 
